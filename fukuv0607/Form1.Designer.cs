@@ -31,6 +31,8 @@
             components = new System.ComponentModel.Container();
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -50,11 +52,33 @@
             timer1.Interval = 20;
             timer1.Tick += timer1_Tick;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Yu Gothic UI", 23F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(337, 231);
+            label2.Name = "label2";
+            label2.Size = new Size(101, 42);
+            label2.TabIndex = 1;
+            label2.Text = "label2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Yu Gothic UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(12, 9);
+            label3.Name = "label3";
+            label3.Size = new Size(26, 31);
+            label3.TabIndex = 2;
+            label3.Text = "0";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(813, 450);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -66,5 +90,7 @@
 
         private Label label1;
         private System.Windows.Forms.Timer timer1;
+        private Label label2;
+        private Label label3;
     }
 }
